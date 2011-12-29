@@ -19,9 +19,6 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Requires:	texlive-fontspec
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The current release of this package typesets mathematics with
@@ -34,20 +31,12 @@ is no support yet for any extra alphabets in the Unicode
 'private use area'. The package relies on recent versions of
 the fontspec package and the l3kernel and l3packages bundles.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -226,7 +215,6 @@ the fontspec package and the l3kernel and l3packages bundles.
 %doc %{_texmfdistdir}/source/latex/unicode-math/unicode-math-testsuite.ltx
 %doc %{_texmfdistdir}/source/latex/unicode-math/unicode-math.dtx
 %doc %{_texmfdistdir}/source/latex/unicode-math/unimath-symbols.ltx
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -237,5 +225,3 @@ the fontspec package and the l3kernel and l3packages bundles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
