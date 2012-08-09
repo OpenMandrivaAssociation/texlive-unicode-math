@@ -1,12 +1,12 @@
-# revision 24022
+# revision 27257
 # category Package
 # catalog-ctan /macros/latex/contrib/unicode-math
-# catalog-date 2011-09-18 12:56:12 +0200
+# catalog-date 2012-07-30 11:22:32 +0200
 # catalog-license lppl1.3
-# catalog-version 0.6
+# catalog-version 0.7a
 Name:		texlive-unicode-math
-Version:	0.6
-Release:	2
+Version:	0.7a
+Release:	1
 Summary:	Unicode mathematics support for XeTeX and LuaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unicode-math
