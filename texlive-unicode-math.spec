@@ -1,11 +1,11 @@
-# revision 27257
+# revision 30504
 # category Package
 # catalog-ctan /macros/latex/contrib/unicode-math
-# catalog-date 2012-07-30 11:22:32 +0200
+# catalog-date 2013-03-17 15:18:45 +0100
 # catalog-license lppl1.3
-# catalog-version 0.7a
+# catalog-version 0.7d
 Name:		texlive-unicode-math
-Version:	0.7a
+Version:	0.7d
 Release:	1
 Summary:	Unicode mathematics support for XeTeX and LuaTeX
 Group:		Publishing
@@ -26,10 +26,11 @@ unicode input and using OpenType maths fonts. (There is little
 compatibility with older maths packages.) XeTeX support is well
 tested, though LuaTeX support less so. The package can typeset
 using STIX fonts, the XITS development of those fonts, the
-Asana-Math fonts and the commercial Cambria Math fonts. There
-is no support yet for any extra alphabets in the Unicode
-'private use area'. The package relies on recent versions of
-the fontspec package and the l3kernel and l3packages bundles.
+Asana-Math fonts, the Latin Modern Math, and the TeX Gyre Math
+font familiess, as well as the commercial Cambria Math fonts.
+There is no support for extra alphabets in the Unicode 'private
+use area'. The package relies on recent versions of the
+fontspec package and the l3kernel and l3packages bundles.
 
 %post
     %{_sbindir}/texlive.post
