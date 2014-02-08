@@ -6,7 +6,7 @@
 # catalog-version 0.7a
 Name:		texlive-unicode-math
 Version:	0.7a
-Release:	1
+Release:	2
 Summary:	Unicode mathematics support for XeTeX and LuaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unicode-math
