@@ -1,13 +1,13 @@
 Name:		texlive-unicode-math
-Version:	0.8o
+Version:	61719
 Release:	1
 Summary:	Unicode mathematics support for XeTeX and LuaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unicode-math
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +27,12 @@ use area'. The package relies on recent versions of the
 fontspec package and the l3kernel and l3packages bundles.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +43,8 @@ fontspec package and the l3kernel and l3packages bundles.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
