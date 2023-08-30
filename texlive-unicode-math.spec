@@ -1,6 +1,6 @@
 Name:		texlive-unicode-math
-Version:	61719
-Release:	2
+Version:	67919
+Release:	1
 Summary:	Unicode mathematics support for XeTeX and LuaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unicode-math
