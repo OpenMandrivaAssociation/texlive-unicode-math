@@ -3,7 +3,7 @@ Version:	67919
 Release:	1
 Summary:	Unicode mathematics support for XeTeX and LuaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/unicode-math
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/unicode-math
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/unicode-math.doc.r%{version}.tar.xz
