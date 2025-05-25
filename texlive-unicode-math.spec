@@ -1,5 +1,5 @@
 Name:		texlive-unicode-math
-Version:	67919
+Version:	75152
 Release:	1
 Summary:	Unicode mathematics support for XeTeX and LuaTeX
 Group:		Publishing
